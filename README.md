@@ -4,4 +4,4 @@ Despligue y creacion de noticias, utilizando express.
 
 Aplicacion desplegada en heroku :
 
-* Direccion: none
+* Direccion: https://scenic-isle-royale-99382.herokuapp.com/
