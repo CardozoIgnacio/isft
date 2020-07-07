@@ -11,7 +11,7 @@ async function noticias(){
         sources: 'google-news-ar',
         
     }).then(response => {
-      return response.articles;git
+      return response.articles;
       /*
         {
           status: "ok",
