@@ -12,12 +12,7 @@ async function noticias(){
         
     }).then(response => {
       return response.articles;
-      /*
-        {
-          status: "ok",
-          articles: [...]
-        }
-      */
+   
      
     });
     return datos

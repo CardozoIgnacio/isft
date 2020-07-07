@@ -5,7 +5,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var noticiasRouter = require('./routes/noticias') ;
+var noticiasRouter = require('./routes/api') ;
 
 var app = express();
 
@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/noticias',noticiasRouter);
+app.use('/api',noticiasRouter);
 
 // Middleware para Vue.js router modo history
 
