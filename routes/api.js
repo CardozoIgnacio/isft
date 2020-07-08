@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var periodico = require('../services/apiNoticias');
+var cors = require('cors')
 
 /* GET users listing. */
-router.get('/noticias', function(req, res, next) {
+router.get('/noticias',cors(), function(req, res, next) {
   
   periodico.getNoticias().then((archi)=>{
     res.send(archi)
@@ -16,7 +17,7 @@ router.get('/noticias', function(req, res, next) {
 });
 
 
-router.get('/usuarios', (req,res,next)=>{
+router.get('/usuarios',cors(), (req,res,next)=>{
 
   res.send({
  pers1:{"id":1,"first_name":"Buffy","last_name":"Kornes","email":"bkornes0@whitehouse.gov","gender":"Female","ip_address":"93.233.127.197"},
